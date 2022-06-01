@@ -5,8 +5,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.navigation.Navigation.findNavController
-import androidx.navigation.fragment.findNavController
 import com.example.home_work_onix.R
 import com.example.home_work_onix.databinding.FragmentLoginBinding
 
@@ -23,23 +21,32 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
 
     override fun onResume() {
         super.onResume()
-        val passwordCorrect : String = binding.PasswordCorrect.text.toString()
-        val login: String = binding.editlogin.text.toString()
-        val password1: String = binding.editText1.text.toString()
-        val password2: String = binding.editText2.text.toString()
 
+        binding.button.setOnClickListener() {
+            val login: String = binding.editlogin.text.toString()
+            val password1: String = binding.editText1.text.toString()
+            val password2: String = binding.editText2.text.toString()
 
-        if (login.matches(".[A-z].".toRegex()))
-        {
-            if (password1.length < 8)
-                binding.PasswordCorrect.text = "Minimum 8 characters"
-            else if (password2 != password1)
-                binding.PasswordCorrect.text = "password mismatch"
+            if (password1.isEmpty() || password2.isEmpty()) {
+                binding.PasswordCorrect.text = "the field must not be empty"
+            }
             else
-                binding.PasswordCorrect.text = "Registration successful"
+            {
+                if (password1.length < 8)
+                    binding.PasswordCorrect.text = "Minimum 8 characters"
+                else {
+                    if (!login.matches(".[A-z].".toRegex())) {
+
+                        if (password2 != password1)
+                            binding.PasswordCorrect.text = "password mismatch"
+                        else
+                            binding.PasswordCorrect.text = "Registration successful"
+                    }
+                    else
+                        binding.PasswordCorrect.text = "enter at least one Latin character"
+                }
+            }
         }
-        else
-            binding.PasswordCorrect.text = "Input must contain 1 uppercase or lowercase character"
     }
 }
 
