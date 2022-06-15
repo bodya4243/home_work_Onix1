@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.secondlesson">
+    package="com.example.onix_homework_two">
 
     <application
         android:allowBackup="true"
@@ -11,10 +11,10 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.SecondLesson"
+        android:theme="@style/Theme.Onix_homework_two"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name="onixhomeworktwo.example.onix_homework_two.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

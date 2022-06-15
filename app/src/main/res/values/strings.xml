@@ -1,3 +1,40 @@
 <resources>
-    <string name="app_name">SecondLesson</string>
+    <string name="app_name">onix_homework_two</string>
+    <string name="questions_value">Which engine is installed in Toyota supra Smokey Nagata?</string>
+    <string name="questions_button">VR-38</string>
+    <string name="questions_button1">2JZ-GTE</string>
+    <string name="questions_button2">RB-26DET</string>
+    <string name="TitleText2">what distribution system is available for Toyota Supra with 2jz?</string>
+    <string name="questions_button4">VTEC</string>
+    <string name="questions_button5">VVT-I</string>
+    <string name="questions_button6">CVTCS</string>
+    <string name="checkbox_button">Honda Civic</string>
+    <string name="checkbox_button2">Toyota Corolla AE-86</string>
+    <string name="checkbox_button3">Toyota Corolla AE-85</string>
+    <string name="checkbox_button4">Toyota MR-2</string>
+    <string name="TitleText3">Which car was equipped with a 4A-GE engine?</string>
+    <string name="TitleText4">is it possible to inject water into the fuel-air mixture</string>
+    <string name="questions_button7">YES</string>
+    <string name="questions_button8">NO</string>
+    <string name="TitleText5">what speed smokey nagata set in Britain?</string>
+    <string name="questions_button9">260km/h</string>
+    <string name="questions_button10">360km/h</string>
+    <string name="questions_button11">297km/h</string>
+    <string name="TitleText6">what is the best lap time for Tsukuba circuit?</string>
+    <string name="questions_button12">49.445</string>
+    <string name="questions_button13">47.445</string>
+    <string name="questions_button14">50.339</string>
+    <string name="TitleText7">which car is the latest production model with a rotary engine</string>
+    <string name="questions_button15">Mazda Rx-8</string>
+    <string name="questions_button16">Mazda Rx-7</string>
+    <string name="questions_button17">Mazda MX30</string>
+    <string name="TitleText8">which car is the fastest in the world</string>
+    <string name="questions_button18">Koenigsegg Agera One of 1</string>
+    <string name="questions_button19">Henessey Venom F5</string>
+    <string name="questions_button20">Bugatti Chiron Super Sport 300+</string>
+    <string name="TitleText9">first turbocharged car</string>
+    <string name="questions_checkbox5">Oldsmobile Jetfire</string>
+    <string name="questions_checkbox6">saab 99 turbo</string>
+    <string name="questions_checkbox7">Chevrolet Corvair Monza</string>
+
 </resources>
